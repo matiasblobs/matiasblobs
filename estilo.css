@@ -1,0 +1,500 @@
+:root {
+    --oscuro: #000000;
+    --primario: #0f2d5b;
+    --blanco: #ffffff;
+    --acento: #f39c12;
+
+    --titulos: 'Raleway', sans-serif;
+    --textos: 'Raleway', sans-serif;
+    
+  }
+
+
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: var(--textos);
+  }
+
+
+
+/***** Estilos tipograficos y/o generales *****/
+
+
+.funcional {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;   
+}
+
+.display {
+    font-size: 2rem;
+    font-style: italic;
+
+}
+
+h5 {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.2rem;
+}
+
+a { text-decoration: none;}
+
+iconify-icon {
+ margin-right: 0.2rem;
+}
+
+.separador {
+    min-height: 4rem;
+    height: 4rem;
+}
+
+.boton {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-family: var(--textos);
+    font-weight: 600;
+    background-color: var(--oscuro);
+    border: none;
+    color: var(--blanco);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.boton:hover {
+    background-color: var(--acento);
+}
+
+input[type="text"] {
+    font-family: var(--textos);
+
+}
+
+
+input[type="text"]:focus {
+    border: 2px solid var(--acento);
+    outline: var(--acento);
+}
+
+/*****menu*****/
+
+.icono-menu {
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.icono-menu:hover {
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    transform: rotate(90deg);
+}
+
+.menujs {
+    background-color: var(--oscuro);
+    color: var(--blanco);  
+    height: 4rem;   
+    transition: all 0.4s ease;
+    top: 0;
+    position: relative;
+}
+
+.menujs .contenedor {
+    display: flex;
+    gap: 2rem;
+    height: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuescondido {    
+    top: -4rem;
+    margin-bottom: -4rem;
+}
+
+.menujs a {
+    color: var(--blanco);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+}
+
+.menujs a:hover {
+    text-decoration: underline;
+}
+
+
+/*****/
+
+header {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+  .contenedor {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 20px;
+  }
+
+
+  .sobreHeader {
+      background-color: var(--oscuro);
+      color: var(--blanco); 
+  }
+
+  .sobreHeader a{
+      color: var(--blanco);
+  }
+  .sobreHeader a:hover {
+      color: var(--acento);
+  }
+
+  .sobreHeader .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+  }
+
+ 
+  .ppalHeader {
+      background-color: var(--blanco);
+  }
+
+  .ppalHeader .contenedor {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+  }
+
+
+ /**** CONTENIDO HOME ********/
+
+.hero {
+    background-color: var(--oscuro);
+    color: white;  
+    display: flex;
+    justify-content: center;  
+}
+
+
+
+.hero img {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+}
+
+
+
+
+
+.areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.areaFoto {   
+    aspect-ratio: 3/4;
+    width: calc( 50% - 10px);     
+    cursor: pointer;
+    overflow: hidden;
+    min-width: 400px;
+}
+
+.areaContenido { 
+    color: var(--blanco);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;  
+    transition: all 0.3s ease;
+}  
+
+.areaContenido:hover {
+    transform: scale(1.05);
+}
+
+.areaFoto1 .areaContenido {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/bici-plegable.jpg);
+}
+
+.areaFoto2 .areaContenido{
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/bici-electrica.jpg);
+} 
+
+
+
+/**************/
+
+.fotoFull {
+    background-color: var(--oscuro);
+    padding: 0;
+}
+
+.fotoFull .contenedor {
+    padding: 0px;
+}
+
+.fotoFull img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    display: block;
+}
+
+/*****************/
+
+.cita .contenedor {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.citaSigno {
+    font-weight: 900;
+    font-size: 4rem;
+}
+ 
+ /***********/
+
+.cuatroSecciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cuatroSecciones .sector {
+    width: 25%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    min-width: 300px;
+}
+
+.cuatroSecciones .sectorContenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--blanco);
+    text-shadow: 2px 2px 5px black;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    aspect-ratio: 3/4;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+    .cuatroSecciones .sectorContenido:hover{
+        transform: scale(1.05);
+    }
+
+.sector1 .sectorContenido {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/helmet.jpg);
+}
+
+.sector2 .sectorContenido {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/repuesto.jpeg);
+}
+.sector3 .sectorContenido {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/guante.png);
+}
+.sector4 .sectorContenido {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(img/seguro.jpg);
+}
+
+
+/************ News letter *************/
+
+.newsLetter {
+    text-align: center;
+}
+
+.newsLetterForm form {
+    border: 1px solid var(--oscuro);
+    display: inline-block;
+}
+
+.newsLetter input[type="text"] {
+    border: 0;
+}
+
+
+
+/************ Footer **********/
+
+footer {
+    background-color: var(--oscuro);
+    color: var(--blanco);
+}
+
+footer a {
+    color: var(--blanco);
+}
+
+footer a:hover {
+    color: var(--acento);
+}
+
+footer h5 {
+    margin: 15px 0;
+}
+
+
+
+.footerPpal {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.footerPpal div {
+    width: 33%;
+    min-width: 280px;
+}
+
+.footerLogo {
+    text-align: center;
+}
+
+
+.footerSello {
+    font-size: 00.8rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/************* Single pagina plegables */
+
+.singlePagina {
+    border-top: 1px solid var(--oscuro);
+}
+
+.tarjetero {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: var(--blanco);
+    color: var(--oscuro);
+    max-width: 240px;
+    border: 1px solid grey;
+    padding: 40px 20px 20px 20px;
+    border-radius: 8px;
+    text-align: center;
+
+    transition: all 0.2s ease;
+}
+
+
+.tarjeta:hover {
+    color: var(--acento);
+    transform: scale(1.04);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+.tarjeta h4 {
+    margin-bottom: 0;
+}
+
+/*** Link Prueba */
+
+.linkPrueba {
+    border-top: 1px solid black; 
+    
+}
+
+.linkPrueba .boton {
+    margin: 40px 0;
+}
+
+
+
+
+/************** Media */
+
+
+@media (max-width: 600px) {
+    /*menu*/
+    .menujs {height: 16rem;}
+    .menujs .contenedor { flex-direction: column;}
+    .menuescondido {top: -16rem; margin-bottom: -16rem;}
+
+    /*display frases*/
+    #displayFrases {display: none;}
+
+    .esconderCelu {display: none;}
+    
+}
+
+
+/************** Animacion */
+
+
+.vieneIzq {   
+    position: relative;
+    animation: 0.75s;
+    animation-delay: initial;
+    /*Me gustaria que la animacion se active cuando el objeto se vea en pantalla, sigo probando eso */  
+    animation-timing-function: ease-out;
+    animation-name: fotoIzq;    
+}
+
+.vieneDer {   
+    position: relative;
+    animation: 0.75s;
+    animation-delay: initial;
+    /*Me gustaria que la animacion se active cuando el objeto se vea en pantalla, sigo probando eso */  
+    animation-timing-function: ease-out;
+    animation-name: fotoDer;    
+}
+
+
+
+@keyframes fotoIzq {
+    from { left: -100% }
+    to {left: 0%}
+}
+
+@keyframes fotoDer {
+    from { right: -100% }
+    to {right: 0%}
+}
