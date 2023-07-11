@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Socio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+    <header>
+        <img src="assets/logo-lubinas.png" alt="Logo Lubinas">
+        <h1>Cargar socio</h1>
+        <div class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="cargarSocio.html">CARGAR</a>
+            <a href="buscarSocio.html">BUSCAR / PAGAR</a>
+        </div>
+    </header>
+    
+    <section class="seccionEjemplos">
+        <button id="limpiarSocios" class="botonSutil">Limpiar / borrar todos los socios</button>
+        <button id="cargarEjemplo" class="botonSutil">cargarEjemplo</button>
+    </section>
+    
+    <section class="seccionCentrada">
+        <h1>Ingrese los datos del nuevo socio</h1>
+        <div class="formulario">
+            <div class="formColumn">
+                <label for="nombre"><span>*</span> Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required autofocus class="inputPrimario"><br><br>
+
+                <label for="apellido"><span>*</span> Apellido:</label><br>
+                <input type="text" id="apellido" name="apellido" required class="inputPrimario"><br><br>
+            </div>
+
+            <div class="formColumn2">
+                <div>
+                    <label for="email"><span>*</span> Email:</label><br>
+                    <input type="email" id="email" name="email" required class="inputPrimario"><br><br>
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" class="inputPrimario"><br><br>
+                </div>
+            </div>
+
+            <div class="formColumn2">
+                <div>
+                    <label for="dni"><span>*</span> DNI:</label><br>
+                    <input type="text" id="dni" name="dni" required class="inputPrimario"><br><br>
+                </div>
+                <div>
+                    <label for="categoria"><span>*</span> Categoria:</label><br>
+                    <select id="categoria" name="categoria" required class="inputPrimario">
+                        <option value="cadete">Cadete</option>
+                        <option value="pleno">Socio Pleno</option>
+                        <option value="adherente">Adherente</option>
+                    </select><br><br>                    
+                </div>
+            </div>    
+            
+            <div class="formColumn">
+                <label for="fechaInscripcion"><span>*</span> Fecha Inscripcion:</label><br>
+                    <select id="fechaInscripcion" name="fechaInscripcion" required class="inputPrimario">
+                    </select><br><br>
+
+            </div>
+
+            <input id="botonEnviar" type="submit" value="Enviar" class="botonPrimario">
+        </div>
+
+        <div id="respuesta">
+
+        </div>
+
+        
+    
+        
+        
+    </section>
+
+    <script src="nuevoSocio.js"></script>
+</body>
+</html>
