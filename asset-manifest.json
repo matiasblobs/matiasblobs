@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/matiasblobs/static/css/main.c23d4bd9.css",
+    "main.js": "/matiasblobs/static/js/main.b2c480d4.js",
+    "static/js/787.b1e9f29b.chunk.js": "/matiasblobs/static/js/787.b1e9f29b.chunk.js",
+    "static/media/medico.jpg": "/matiasblobs/static/media/medico.1db9e5cbc75ce76419ea.jpg",
+    "index.html": "/matiasblobs/index.html",
+    "main.c23d4bd9.css.map": "/matiasblobs/static/css/main.c23d4bd9.css.map",
+    "main.b2c480d4.js.map": "/matiasblobs/static/js/main.b2c480d4.js.map",
+    "787.b1e9f29b.chunk.js.map": "/matiasblobs/static/js/787.b1e9f29b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c23d4bd9.css",
+    "static/js/main.b2c480d4.js"
+  ]
+}
