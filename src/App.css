@@ -1,0 +1,30 @@
+.alto100 {
+    height: 100vh;
+}
+
+.separadorNav {
+    border-right: 1px solid var(--bs-nav-link-color);
+}
+
+/* HOME PAGE */
+
+.home-1 {
+    background-image: url(recursos/medico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.home-1 .cajaTexto {    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.home-2 img {
+    width: 10rem;
+}
+
+.home-2 button {
+    padding: 1rem;
+    width: 80%;
+}
