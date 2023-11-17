@@ -63,12 +63,14 @@ class medicos extends Component {
         }
     }
 
+  
+
     cambiosform = async e => {
         e.persist();
         await this.setState({
             form: {
                 ...this.state.form,
-                [e.target.diagnostico]: e.target.value
+                [e.target.name]: e.target.value
             }
         });
         console.log(this.state.form);
@@ -108,6 +110,7 @@ class medicos extends Component {
             }
 
         })
+        this.listarRelaciones();
 
     }
 
