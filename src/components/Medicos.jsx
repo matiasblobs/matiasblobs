@@ -312,6 +312,7 @@ class medicos extends Component {
     // Montar al inicio
 
     componentDidMount() {
+        console.log('test 01');
         this.listarItems();
         this.cargarEspecializaciones();
         this.listarRelaciones();
@@ -496,7 +497,7 @@ class medicos extends Component {
 
                     </ModalBody>
                     <ModalFooter>
-                        <button className='btn btn-success' onClick={() => { this.guardarOpciones(); this.setState({ modalEspecializacion: false }) }}>Guardar</button>
+                        <button className='btn btn-success' onClick={() => { this.guardarOpciones() }}>Guardar</button>
                     </ModalFooter>
                 </Modal>
 
