@@ -21,7 +21,7 @@ class profesor extends Component {
         return (
             <div>
                 <Menu />
-                <div className="container mt-5">
+                <div className="container mt-5 mb-5">
                     <h1>Sobre este trabajo</h1>
                     <p>Hola profesor le comento brevemente lo que puede encontrar en este trabajo, es por supuesto una versión Beta o incompleta de lo que puede realmente ser un sistema de gestión de un Centro Médico, pero es una base que incluye carga, edición y borrado de contenidos, con tablas relacionadas y con tablas de relación múltiple</p>
                     <ul>
