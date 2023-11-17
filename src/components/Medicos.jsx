@@ -234,7 +234,7 @@ class medicos extends Component {
             console.log(error.message)
            
             })
-
+     
         
     }
 
@@ -242,6 +242,7 @@ class medicos extends Component {
         await axios.delete(url + urlTabla + this.state.form.id).then(
             response => {
                 this.setState({ modalBorrar: false });
+                this.limpiarForm();
                 this.listarItems()
             }).catch(error => {
                  if (error.response.status === 400) {
@@ -312,7 +313,7 @@ class medicos extends Component {
     // Montar al inicio
 
     componentDidMount() {
-        console.log('test 02');
+        console.log('test 03');
         this.listarItems();
         this.cargarEspecializaciones();
         this.listarRelaciones();
