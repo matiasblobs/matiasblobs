@@ -63,8 +63,8 @@ class medicos extends Component {
         }
     }
 
-  
-
+   
+    
     cambiosform = async e => {
         e.persist();
         await this.setState({
@@ -108,8 +108,11 @@ class medicos extends Component {
                 }
 
             }
+           
+           
 
         })
+     
         this.listarRelaciones();
 
     }
@@ -238,13 +241,13 @@ class medicos extends Component {
                 this.setState({ modalBorrar: false });
                 this.listarItems()
             }).catch(error => {
-                if (error.response.status === 400) {
-                    console.log('hasta aqui bien')
-                    this.setState({ modalBorrar: false });
-                    this.setState({ modalError: true })
-                } else {
-                    console.log(error.message)
-                }
+                 if (error.response.status === 400) {
+                console.log('hasta aqui bien')
+                this.setState({ modalBorrar: false });
+                this.setState({ modalError: true })
+            } else {
+                console.log(error.message)
+            }
             })
 
     }
