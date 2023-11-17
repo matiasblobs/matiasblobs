@@ -115,7 +115,7 @@ class medicos extends Component {
            
 
         })
-     
+     this.setState({ modalEspecializacion: false });
         this.listarRelaciones();
 
     }
@@ -312,7 +312,7 @@ class medicos extends Component {
     // Montar al inicio
 
     componentDidMount() {
-        console.log('test 01');
+        console.log('test 02');
         this.listarItems();
         this.cargarEspecializaciones();
         this.listarRelaciones();
