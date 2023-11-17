@@ -45,7 +45,7 @@ return (
         <div className="cajaAbajo d-flex">
         <div className="ms-auto"></div>   
         <p className='small'>
-            <Link className="enlace me-4" to={'/obrassociales'} ><b>ESPECIALIZACIONES</b></Link>
+            <Link className="enlace me-4" to={'/especializaciones'} ><b>ESPECIALIZACIONES</b></Link>
             <Link className="enlace" to={'/obrassociales'} ><b >OBRAS SOCIALES</b></Link> 
             </p>   
                  
