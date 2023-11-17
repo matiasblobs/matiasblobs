@@ -96,6 +96,8 @@ class medicos extends Component {
 
     guardarOpciones = async () => {
         var checkboxes = document.getElementsByName("opcion");
+        console.log('funcion guardar opciones');
+        console.log(checkboxes);
 
         await axios.get(url + 'medicos/').then(response => {
             const ids = response.data.map(object => {
@@ -104,7 +106,8 @@ class medicos extends Component {
             var medico = Math.max(...ids);
             for (var i = 0; i < checkboxes.length; i++) {
                 if (checkboxes[i].checked) {
-                    this.vincularEspecializacion(medico, checkboxes[i].value)
+                    this.vincularEspecializacion(medico, checkboxes[i].value);
+                    console.log('dentro del loop de cada chequeada');
                 }
 
             }
