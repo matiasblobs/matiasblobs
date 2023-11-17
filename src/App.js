@@ -3,6 +3,7 @@ import './App.css';
 import React, { Component } from "react";
 import { BrowserRouter, Route, Routes} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 ///  importamos componenentes
 //import Menu from "./components/Menu";
